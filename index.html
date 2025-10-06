@@ -1,0 +1,199 @@
+<!--
+    Project: Web Dev I Lab Assignment 1
+    File: index.html
+    Page: Personal Portfolio
+
+   
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhavi Goyal | Web Developer Portfolio</title>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #333;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+       
+        section {
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    
+    <header>
+        <h1>Chhavi Goyal</h1>
+        
+        <!-- NAVIGATION: Internal links to sections -->
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN: Container for the primary content sections -->
+    <main id="main-content">
+
+        <!-- HERO SECTION (Implicit in the top section) -->
+        <section id="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I am Chhavi Goyal, a passionate Web Development student dedicated to building creative and user-friendly digital experiences.</p>
+        </section>
+
+        <!-- SECTION: ABOUT -->
+        <section id="about">
+            <h2>About Me</h2>
+            
+            <figure>
+                <!-- Image placeholder, following the alt text requirement -->
+                <img 
+                    src="https://placehold.co/150x150/000/fff?text=Profile" 
+                    alt="Profile picture of Chhavi Goyal, a web development student." 
+                    width="150" 
+                    height="150"
+                >
+                <!-- Short Bio -->
+                <figcaption>
+                    <p>I am passionate about learning web development and building creative projects. My focus is currently on mastering the fundamentals of HTML5, CSS3, and modern JavaScript to create fast, accessible, and beautiful web applications.</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- SECTION: PROJECTS -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <!-- Using an unordered list (<ul>) as requested -->
+            <ul>
+                <li><strong>Portfolio Website:</strong> A personal one-page website to showcase bio, skills, and contact details, built with semantic HTML.</li>
+                <li><strong>Medium Clone:</strong> A simple blog layout that looks like Medium, built only with HTML and CSS structure.</li>
+                <li><strong>Birthday Card:</strong> A creative greeting card webpage designed with HTML structure and CSS styling.</li>
+            </ul>
+        </section>
+        
+        <!-- SECTION: SKILLS -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <!-- Skills Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Learning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION: CONTACT -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <!-- Contact Form -->
+            <form action="#" method="POST">
+                
+                <!-- Name Field with label, required, and placeholder -->
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Enter your name" 
+                        required
+                    ><br>
+                </div>
+
+                <!-- Email Field with label, required, and placeholder -->
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required
+                    ><br>
+                </div>
+
+                <!-- Message Field with label, required, and placeholder -->
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="4" 
+                        cols="30" 
+                        placeholder="Enter your message" 
+                        required
+                    ></textarea><br>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER: Contains copyright or general site information -->
+    <footer>
+        <p>&copy; 2025 Chhavi Goyal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
